@@ -23,7 +23,16 @@ body {
 h1 {
     padding: 10px;
     display: inline-block;
-    text-shadow: 4px 4px 4px rgb(0, 0, 0); /* Adjust the shadow color and size as needed */
+    font-weight: bolder;
+    color: white;
+    -webkit-text-stroke: 1px black;
+    font-size: 70px;
+}
+
+.header-img {
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
 }
 
 p {
@@ -44,34 +53,15 @@ button:hover {
     background-color: #45a049;
 }
 
+/* Header */
 header {
     background-image: url('images/topo.jpg'); /* Replace with your actual image */
     background-size: cover;
-    background-position: bottom;
+    background-position: center;
     background-repeat: no-repeat;
     color: #fff;
     text-align: center;
-    padding: 100px 0;
-}
-
-nav {
-    background-color: #333;
-    padding: 15px 0;
-    text-align: center;
-}
-
-nav a {
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 20px;
-    margin: 0 10px;
-    font-size: 16px;
-    font-weight: bold;
-}
-
-nav a:hover {
-    background-color: #fff;
-    color: #333;
+    padding: 0;
 }
 
 section {
@@ -156,15 +146,18 @@ li a:hover {
 
 .image-container {
     display: flex;
+    flex-wrap: nowrap;
     justify-content: space-between;
     margin-top: 20px;
 }
 
 .featured-image {
-    height: 600px; /* Adjust the height as needed */
-    width: auto;
+    height: auto !important; /* Adjust the height as needed */
+    width: 30% !important; /* Adjust the width as needed */
     border-radius: 8px;
     cursor: pointer;
+    flex: 1 0 auto !important;
+    margin: 10px;
 }
 
 #lightbox {
@@ -194,3 +187,67 @@ li a:hover {
     border: 2px solid white;
     border-radius: 8px;
 }
+
+/* custom navbar */
+
+.navbar-brand,
+.navbar-nav .nav-link {
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #007bff;
+    background-color: #f1f1f1;
+}
+
+.navbar-toggler {
+    border-color: #fff;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.custom-navbar {
+    padding: 20px 0 !important; /* This adds vertical padding */
+}
+
+.custom-navbar .navbar-brand,
+.custom-navbar .nav-link {
+    color: white; /* Change this to your preferred color */
+    padding: 0 30px !important;
+}
+
+.custom-navbar .nav-link.active,
+.custom-navbar .nav-link:hover {
+    color: #007bff !important; /* Change this to your preferred color */
+}
+
+.custom-navbar .navbar-nav {
+    margin: 0 auto;
+}
+
+/*
+nav {
+    background-color: #333;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: #fff;
+    color: #333;
+}
+*/
