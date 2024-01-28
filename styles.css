@@ -1,0 +1,196 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+h1 {
+    padding: 10px;
+    display: inline-block;
+    text-shadow: 4px 4px 4px rgb(0, 0, 0); /* Adjust the shadow color and size as needed */
+}
+
+p {
+    color: #666;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+header {
+    background-image: url('images/topo.jpg'); /* Replace with your actual image */
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+nav {
+    background-color: #333;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+section {
+    padding: 40px;
+}
+
+h2 {
+    color: #333;
+}
+
+.featured-item {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+p {
+    color: #666;
+}
+
+li {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+h3 {
+    color: #666;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+iframe {
+    width: 100%;
+    height: 600px; /* Adjust the height as needed */
+    border: 1px solid #ccc;
+}
+
+li a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+li a:hover {
+    text-decoration: underline;
+}
+
+.link-preview {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    margin-bottom: 20px; /* Adjust as needed */
+}
+
+.link-preview img {
+    max-width: 500px;
+    max-height: 500px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.link-preview .channel {
+    margin-right: 10px;
+    max-width: 560px;
+    max-height: 315px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.featured-image {
+    height: 600px; /* Adjust the height as needed */
+    width: auto;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#lightbox {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#lightbox.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#lightbox img {
+    max-height: 80%;
+    max-width: 80%;
+    padding: 4px;
+    background-color: #333;
+    border: 2px solid white;
+    border-radius: 8px;
+}
