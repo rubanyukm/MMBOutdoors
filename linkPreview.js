@@ -14,6 +14,9 @@ async function fetchLinkPreview(url, imageId) {
 
 // Fetch link previews for websites
 fetchLinkPreview('https://intothebackcountryguides.com/', 'website-preview-1');
+fetchLinkPreview('https://enjoyyourparks.com/', 'website-preview-2');
+fetchLinkPreview('https://www.alltrails.com/', 'website-preview-3');
 // Add more fetchLinkPreview calls for additional websites
 
 // Repeat the same process for Books and YouTube Channels
+fetchLinkPreview('https://www.youtube.com/watch?v=cLc5ouH4Oc4', 'youtube-preview-1');
